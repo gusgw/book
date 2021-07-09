@@ -147,16 +147,16 @@ body[dir="rtl"] .book-menu {
 }
 
 .book-section-flat {
-  margin-bottom: $padding-16 * 2;
+  margin-bottom: $padding-16;
 
   &:not(:first-child) {
-    margin-top: $padding-16 * 2;
+    margin-top: 0em; //$padding-16 * 2;
   }
 
   > a,
   > span,
   > label {
-    font-weight: bolder;
+    //font-weight: bolder;
   }
 
   > ul {

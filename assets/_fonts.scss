@@ -5,7 +5,7 @@
   font-weight: 400;
   font-display: swap;
   src: local(''),
-       url('fonts/cmunrm.ttf') format('ttf')
+       url('fonts/cmu.serif-roman.ttf') format('truetype')
 }
 /* Computer Modern Serif Bold */
 @font-face {
@@ -14,7 +14,7 @@
   font-weight: bold;
   font-display: swap;
   src: local(''),
-       url('fonts/cmunbl.ttf') format('ttf')
+       url('fonts/cmu.serif-bold.ttf') format('truetype')
 }
 /* Computer Modern Serif Italic */
 @font-face {
@@ -23,17 +23,79 @@
   font-weight: normal;
   font-display: swap;
   src: local(''),
-       url('fonts/cmunit.ttf') format('ttf')
+       url('fonts/cmu.serif-italic.ttf') format('truetype')
 }
 
-/* Computer Modern Bright SemiBold */
+/* Computer Modern Bright */
 @font-face {
   font-family: 'Computer Modern Bright';
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-display: swap;
   src: local(''),
-       url('fonts/cmunbso.ttf') format('ttf')
+       url('fonts/cmu.bright-roman.ttf') format('truetype')
+}
+
+/* Computer Modern Bright */
+@font-face {
+  font-family: 'Computer Modern Bright';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local(''),
+       url('fonts/cmu.bright-semibold.ttf') format('truetype')
+}
+
+/* Computer Modern Bright */
+@font-face {
+  font-family: 'Computer Modern Bright';
+  font-style: oblique;
+  font-weight: 400;
+  font-display: swap;
+  src: local(''),
+       url('fonts/cmu.bright-oblique.ttf') format('truetype')
+}
+
+
+/* Computer Modern Sans Serif */
+@font-face {
+  font-family: 'Computer Modern Sans Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local(''),
+       url('fonts/cmu.sans-serif-medium.ttf') format('truetype')
+}
+
+/* Computer Modern Sans Serif */
+@font-face {
+  font-family: 'Computer Modern Sans Serif';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local(''),
+       url('fonts/cmu.sans-serif-bold.ttf') format('truetype')
+}
+
+/* Computer Modern Sans Serif */
+@font-face {
+  font-family: 'Computer Modern Sans Serif';
+  font-style: oblique;
+  font-weight: normal;
+  font-display: swap;
+  src: local(''),
+       url('fonts/cmu.bright-oblique.ttf') format('truetype')
+}
+
+
+/* Computer Modern Sans Serif */
+@font-face {
+  font-family: 'Computer Modern Sans Serif';
+  font-style: oblique;
+  font-weight: bold;
+  font-display: swap;
+  src: local(''),
+       url('fonts/cmu.sans-serif-boldoblique.ttf') format('truetype')
 }
 
 /* Hack */
@@ -43,16 +105,24 @@
   font-weight: 400;
   font-display: swap;
   src: local(''),
-       url('fonts/Hack-Regular.ttf') format('ttf'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('fonts/Hack-Regular.ttf') format('truetype'), /* Chrome 26+, Opera 23+, Firefox 39+ */
 }
 
 
 body {
-  font-family: 'Computer Modern Serif', serif;
+  font-family: 'Computer Modern Sans Serif', sans-serif;
 }
 
-title {
-  font-family: 'Computer Modern Bright', sans-serif;
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Computer Modern Sans Serif', sans-serif;
+}
+
+.book-brand {
+  font-weight: bold;
+}
+.book-menu-content, .book-toc-content, .book-header, .book-footer {
+  font-family: 'Computer Modern Sans Serif', sans-serif;
+  font-weight: bold;
 }
 
 code {

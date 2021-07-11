@@ -86,7 +86,8 @@ ul.pagination {
 
 .book-brand {
   margin-top: 0;
-
+  text-align: center;
+  font-size: 24px;
   img {
     height: 1.5em;
     width: auto;
@@ -97,13 +98,13 @@ ul.pagination {
 
 .book-menu {
   flex: 0 0 $menu-width;
+  align-items: center;
   font-size: $font-size-14;
 
   .book-menu-content {
     width: $menu-width;
     padding: $padding-16;
     background: var(--body-background);
-
     @include fixed;
   }
 
@@ -128,11 +129,56 @@ ul.pagination {
 
   input.toggle + label::after {
     content: "▸";
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    padding-top: 3px;
+    box-sizing: border-box;
   }
 
   input.toggle:checked + label::after {
     content: "▾";
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    padding-top: 3px;
+    box-sizing: border-box;
   }
+}
+
+.book-header-icon {
+  vertical-align: middle;
+  padding: 0px;
+  margin: 0px;
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+}
+.book-header-text {
+  vertical-align: -2px;
+  padding: 0px;
+  margin: 0px;
+  display: inline-block;
+}
+.book-menu-item-icon {
+  vertical-align: middle;
+  padding: 0px;
+  margin: 0px;
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+}
+.book-menu-item-text {
+  vertical-align: sub;
+  padding: 0px;
+  margin: 0px;
+  display: inline-block;
+}
+.book-menu-item-suffix {
+  vertical-align: -2px;
+  display: inline-block;
+  width: 60%;
+  height: auto;
 }
 
 // for RTL support

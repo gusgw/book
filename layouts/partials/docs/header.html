@@ -2,8 +2,10 @@
   <label for="menu-control">
     <img src="{{ "svg/menu.svg" | relURL }}" class="book-icon" alt="Menu" />
   </label>
-
-  <strong>{{ partial "docs/collapsedtitle" . }}</strong>
+  <strong>
+    <p class=book-header-icon> {{- partial "docs/icon" . -}} </p>
+    <p class=book-header-text> {{- partial "docs/collapsedtitle" . -}} </p>
+  </strong>
 
   <label for="toc-control">
     {{ if default true (default .Site.Params.BookToC .Params.BookToC) }}

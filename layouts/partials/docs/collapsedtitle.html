@@ -12,5 +12,5 @@
   {{ $title = .File.BaseFileName | humanize | title }}
 {{ end }}
 
-{{ $fulltitle := printf "%s&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;%s" $.Params.icon "Angus Gray-Weale" | safeHTML }}
+{{ $fulltitle := "Angus Gray-Weale" | safeHTML }}
 {{ return $fulltitle }}

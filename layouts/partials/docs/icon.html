@@ -1,5 +1,5 @@
 <!-- 
   Partial to return the page icon
 -->
-
-{{ return $.Params.icon }}
+{{ $icon := $.Params.icon  | safeHTML }}
+{{ return $icon}}

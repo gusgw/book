@@ -11,13 +11,14 @@
   {{ range . }}
   <li>
     <a href="{{ .URL }}" {{ if and (not .Page) (and (not (eq .Name "Home")) (not (eq .Name "Diary"))) }}target="_blank" rel="noopener"{{ end }} >
-      {{- .Pre -}}
-      {{ with .Page }}
-        {{ partial "docs/title" .Page }}
-      {{ else }}
-        {{ .Name }}
-      {{ end }}
-      {{- .Post -}}
+        {{- .Pre -}}
+          {{ with .Page }}
+            <p class=book-menu-item-icon> {{ partial "docs/icon" .Page }} </p>
+            <p class=book-menu-item-text> {{ partial "docs/title" .Page }} </p>
+          {{ else }}
+            <p class=book-menu-item-text> {{ .Name }} </p>
+          {{ end }}
+        <p class=book-menu-item-text> {{- .Post -}} </p>
     </a>
     {{- with .Children }}
       {{ template "book-menu-hugo" . }}

@@ -35,11 +35,13 @@
         <p class=book-menu-item-text> {{- partial "docs/title" .Page -}} </p>
       </a>
     </label>
-  {{ else if .Page.Content }}
+  {{ else if (.Page.Content) }}
+    {{ if (eq ($.Page.Param "show") "True") }}
     <a href="{{ .Page.Permalink }}" class="{{ if $current }} active{{ end }}">
       <p class=book-menu-item-icon> {{- partial "docs/icon" .Page -}} </p>
       <p class=book-menu-item-text> {{- partial "docs/title" .Page -}} </p>
     </a>
+    {{ end }}
   {{ else }}
     <span> 
       <p class=book-menu-item-icon> {{- partial "docs/icon" .Page -}} </p>

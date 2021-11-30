@@ -86,14 +86,31 @@ ul.pagination {
 
 .book-brand {
   margin-top: 0;
-  text-align: center;
+  text-align: left;
+  font-size: 20px;
+  line-height: 1.25;
+
+}
+
+.book-logo-title {
+  display: table;
+}
+
+.book-title {
+  display: table-cell;
+}
+.book-logo {
+  height: auto;
+  width: 48px;
+  vertical-align: text-top;
+  display: table-cell;
+  margin-right: 8px;
+}
+.book-author {
+  margin-top: 0;
+  margin-left: 2px;
+  text-align: left;
   font-size: 24px;
-  img {
-    height: 1.5em;
-    width: auto;
-    vertical-align: middle;
-    margin-inline-end: $padding-8;
-  }
 }
 
 .book-menu {
@@ -104,7 +121,7 @@ ul.pagination {
   .book-menu-content {
     width: $menu-width;
     padding: $padding-16;
-    background: var(--body-background);
+    background: var(--menu-background);
     @include fixed;
   }
 
@@ -163,24 +180,30 @@ ul.pagination {
 .book-menu-item-icon {
   vertical-align: middle;
   padding: 0px;
-  margin: 0px;
+  margin-top: 0.35px;
+  margin-bottom: 5.35px;
+  margin-left: 0px;
+  margin-right: 0px;
   display: inline-block;
-  height: 16px;
-  width: 16px;
-  filter: invert(100%);
+  height: 15px;
+  width: 15px;
+  line-height: 20.7px;
 }
 .book-menu-item-icon-size {
   width: inherit;
   height: inherit;
+  margin-top: inherit;
+  margin-bottom:inherit;
 }
 .book-menu-item-text {
   vertical-align: middle;
   padding: 0px;
   margin: 0px;
   display: inline-block;
+  line-height: 20.7px;
 }
 .book-menu-item-suffix {
-  vertical-align: -2px;
+  vertical-align: -1px;
   display: inline-block;
   width: 60%;
   height: auto;
@@ -242,6 +265,7 @@ body[dir="rtl"] .book-menu {
 .book-search {
   position: relative;
   margin: $padding-16 0;
+  margin-bottom: 48px;
   border-bottom: 1px solid transparent;
 
   input {
@@ -287,7 +311,6 @@ body[dir="rtl"] .book-menu {
   .book-toc-content {
     width: $toc-width;
     padding: $padding-16;
-
     @include fixed;
   }
 
@@ -440,6 +463,7 @@ body[dir="rtl"] .book-menu {
   #toc-control:checked ~ main {
     .book-header aside {
       display: block;
+      text-align: right;
     }
   }
 

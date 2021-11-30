@@ -31,14 +31,14 @@
     <input type="checkbox" id="section-{{ md5 .Page }}" class="toggle" {{ if or $current $ancestor }}checked{{ end }} />
     <label for="section-{{ md5 .Page }}" class="flex justify-between">
       <a {{ if .Page.Content }}href="{{ .Page.Permalink }}"{{ else }}role="button"{{ end }} class="{{ if $current }}active{{ end }}">
-        <p class=book-menu-item-icon> {{- partial "docs/icon" .Page -}} </p>
+        <p class="book-icon book-menu-item-icon"> {{- partial "docs/icon" .Page -}} </p>
         <p class=book-menu-item-text> {{- partial "docs/title" .Page -}} </p>
       </a>
     </label>
   {{ else if (.Page.Content) }}
     {{ if (eq ($.Page.Param "show") "True") }}
     <a href="{{ .Page.Permalink }}" class="{{ if $current }} active{{ end }}">
-      <p class=book-menu-item-icon> {{- partial "docs/icon" .Page -}} </p>
+      <p class="book-icon book-menu-item-icon"> {{- partial "docs/icon" .Page -}} </p>
       <p class=book-menu-item-text> {{- partial "docs/title" .Page -}} </p>
     </a>
     {{ end }}

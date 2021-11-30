@@ -4,7 +4,7 @@
   "start_url": "{{ "/" | relURL }}",
   "scope": "{{ "/" | relURL }}",
   "display": "standalone",
-  "background_color": "#000000",
+  "background_color": "#030616",
   "theme_color": "#000000",
   "icons": [
     {

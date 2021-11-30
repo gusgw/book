@@ -13,7 +13,7 @@
     <a href="{{ .URL }}" {{ if and (not .Page) (and (not (eq .Name "Home")) (not (eq .Name "Diary"))) }}target="_blank" rel="noopener"{{ end }} >
         {{- .Pre -}}
           {{ with .Page }}
-            <p class=book-menu-item-icon> {{ partial "docs/icon" .Page }} </p>
+            <p class="book-icon book-menu-item-icon"> {{ partial "docs/icon" .Page }} </p>
             <p class=book-menu-item-text> {{ partial "docs/title" .Page }} </p>
           {{ else }}
             <p class=book-menu-item-text> {{ .Name }} </p>

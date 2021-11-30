@@ -165,11 +165,16 @@ ul.pagination {
   padding: 0px;
   margin: 0px;
   display: inline-block;
-  height: 24px;
-  width: 24px;
+  height: 16px;
+  width: 16px;
+  filter: invert(100%);
+}
+.book-menu-item-icon-size {
+  width: inherit;
+  height: inherit;
 }
 .book-menu-item-text {
-  vertical-align: sub;
+  vertical-align: middle;
   padding: 0px;
   margin: 0px;
   display: inline-block;

@@ -4,10 +4,10 @@
       {{- with .Site.Params.BookLogo -}}
         <img class=book-logo src="{{ . | relURL }}" alt="Logo"/>
       {{- end -}}
-    <span class=book-title>{{ .Site.Title }}</span>
+    <span>{{ .Site.Title }}</span>
   </a>
 </h3>
-<h5 class="book-author">
+<h4 class="book-author">
   {{ .Site.Params.Author }}
-</h5>
+</h4>
 

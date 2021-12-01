@@ -87,30 +87,25 @@ ul.pagination {
 .book-brand {
   margin-top: 0;
   text-align: left;
-  font-size: 20px;
+  font-size: 22px;
   line-height: 1.25;
-
 }
 
 .book-logo-title {
-  display: table;
+  display: flex;
+  align-items: center;
 }
 
-.book-title {
-  display: table-cell;
-}
 .book-logo {
   height: auto;
-  width: 48px;
-  vertical-align: text-top;
-  display: table-cell;
+  width: 60px;
   margin-right: 8px;
 }
 .book-author {
   margin-top: 0;
   margin-left: 2px;
   text-align: left;
-  font-size: 24px;
+  font-size: 26px;
 }
 
 .book-menu {

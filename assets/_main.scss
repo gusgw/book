@@ -105,7 +105,7 @@ ul.pagination {
   margin-top: 0;
   margin-left: 2px;
   text-align: left;
-  font-size: 26px;
+  font-size: 28px;
 }
 
 .book-menu {
@@ -141,19 +141,17 @@ ul.pagination {
 
   input.toggle + label::after {
     content: "▸";
-    font-size: 16px;
+    font-size: 18px;
     display: flex;
-    align-items: center;
-    padding-top: 3px;
+    align-items: flex-start;
     box-sizing: border-box;
   }
 
   input.toggle:checked + label::after {
     content: "▾";
-    font-size: 16px;
+    font-size: 18px;
     display: flex;
-    align-items: center;
-    padding-top: 3px;
+    align-items: flex-start;
     box-sizing: border-box;
   }
 }
@@ -175,10 +173,7 @@ ul.pagination {
 .book-menu-item-icon {
   vertical-align: middle;
   padding: 0px;
-  margin-top: 0.35px;
-  margin-bottom: 5.35px;
-  margin-left: 0px;
-  margin-right: 0px;
+  margin: 0px;
   display: inline-block;
   height: 15px;
   width: 15px;
@@ -191,17 +186,16 @@ ul.pagination {
   margin-bottom:inherit;
 }
 .book-menu-item-text {
-  vertical-align: middle;
+  vertical-align: text-bottom;
   padding: 0px;
   margin: 0px;
   display: inline-block;
   line-height: 20.7px;
 }
 .book-menu-item-suffix {
-  vertical-align: -1px;
-  display: inline-block;
-  width: 60%;
-  height: auto;
+  height: 18px;
+  width: 18px;
+  vertical-align: -2px;
 }
 
 // for RTL support

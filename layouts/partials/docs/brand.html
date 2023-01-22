@@ -1,13 +1,3 @@
-<h3 class="book-brand">
-<div class="container">
-  <a class=book-logo-title href="{{ cond (not .Site.Home.File) .Sites.First.Home.RelPermalink .Site.Home.RelPermalink }}">
-      {{- with .Site.Params.BookLogo -}}
-        <img class=book-logo src="{{ . | relURL }}" alt="Logo"/>
-      {{- end -}}
-    <span>{{ .Site.Title }}</span>
-  </a>
-</h3>
 <h4 style="font-size: 48;" class="book-author">
   {{ .Site.Params.Author }}
 </h4>
-

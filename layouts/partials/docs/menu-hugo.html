@@ -10,7 +10,7 @@
 <ul>
   {{ range . }}
   <li>
-    <a href="{{ .URL }}" {{ if and (not .Page) (and (not (eq .Name "Home")) (not (eq .Name "Diary"))) }}target="_blank" rel="noopener"{{ end }} >
+    <a href="{{ .URL }}" {{ if and (not .Page) (and (not (eq .Name "Home")) (not (eq .Name "Diary"))) }}target="_self" rel="noopener"{{ end }} >
         {{- .Pre -}}
           {{ with .Page }}
             <p class="book-icon book-menu-item-icon"> {{ partial "docs/icon" .Page }} </p>
